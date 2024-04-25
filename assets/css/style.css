@@ -144,6 +144,17 @@ nav{
     background: var(--first-color);
     border-radius: 50%;
 }
+/*MEDIA QUERY == 1024px*/
+@media only screen and (max-width: 1024px) {
+        .featured-text{
+            padding: 0;
+        }
+        .image, .image img{
+            width: 320px;
+            height: 320px;
+        }
+    }
+
 
 /*MEDIA QUERY == 900px*/
 @media only screen and (max-width: 900px) {
