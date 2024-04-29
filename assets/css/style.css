@@ -186,6 +186,15 @@ nav{
     text-transform: capitalize;
     color: var(--text-color-third);
 }
+@media screen and (max-width:768px) {
+    .featured-name{
+        font-size: 40px;
+    }
+    .typedText{
+        font-size: 40px;
+        margin-bottom: 24px;
+    }
+}
 .featured-text-info{
     font-size: 15px;
     margin-bottom: 30px;
@@ -206,6 +215,11 @@ nav{
     display: flex;
     margin-top: 5em;
     gap: 30px;
+}
+@media screen and (max-width:768px) {
+    .social_icons{
+        margin: 5em 0;
+    }
 }
 .icon{
     display: flex;
@@ -424,21 +438,22 @@ h3{
     color: var(--color-white);
     margin-bottom: 20px;
 }
-.contact-info>p{
+.contact-info>a{
     display: flex;
+    text-decoration: none;
     align-items: center;
-    gap: 10px;
     color: var(--color-white);
+    gap: 10px;
     margin-block: 5px;
 }
-.contact-info p>i{
+.contact-info a>i{
     font-size: 18px;
 }
 .contact-info::after{
     background: var(--color-white);
 }
 .contact-info:hover.contact-info h2,
-.contact-info:hover.contact-info p,
+.contact-info:hover.contact-info a,
 .contact-info:hover.contact-info i{
     color: #777;
     z-index: 2;
